@@ -40,4 +40,7 @@ body {
   p {
     margin-bottom: 10px;
   }
-  
+ .play-btn{
+    display: flex;
+    justify-content: left;
+ }
