@@ -1,4 +1,4 @@
-let playlist = document.getElementById('playlists');
+let playlist = document.getElementById('Badgify');
 let dataUrl = 'http://localhost:3000/playlists'
 
 // send GET request to the local server
@@ -22,4 +22,36 @@ let displayScreen = (data) => {
     playlist.appendChild(entry)
  
   })
+
 }
+
+let addPlaylist = (e) => {
+  e.preventDefault()
+  let author = document.getElementById('author').value
+  let genre = document.getElementById('genre').value
+  let description = document.getElementById('description').value
+  let imageUrl = document.getElementById('image_url').value
+  let playlistUrl = document.getElementById('playlist_url').value
+
+  const playObj = {
+    author: author,
+    genre: genre,
+    description: description,
+    image: imageUrl,
+    url: playlistUrl
+  }
+
+  fetch(dataUrl,{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(playObj)
+  })
+  .then(res => res.json())
+  .then(data => console.log(data))
+
+}
+
+let form = document.querySelector('#postForm')
+form.addEventListener('submit', addPlaylist)
