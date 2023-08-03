@@ -61,7 +61,7 @@ body {
   p {
     margin-bottom: 10px;
   }
- .play-btn{
+ .play-btn, .del-btn{
     display: flex;
     justify-content: center;
     width: 70px;
@@ -105,7 +105,9 @@ button {
   border: none;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #ccc;
+}
+a:link {
+  text-decoration: none;
 }
