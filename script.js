@@ -16,8 +16,8 @@ let displayScreen = (data) => {
       <h3>By: ${i.author}</h3>
       <h3>Genre: ${i.genre}</h3>
       <h3>${i.description}</h3>
-      <a href="${i.url}"><button>Go To Playlist </button></a>
-      <button class="play-btn" data-id="${i.id}">Play Playlist </button>
+      <a href="${i.url}"><button class = "play-btn">Play</button></a><br><br>
+      
     `
     playlist.appendChild(entry)
  
