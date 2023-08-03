@@ -1,0 +1,116 @@
+{
+  "playlists": [
+    {
+      "id": "1",
+      "author": "James",
+      "genre": "Afro House",
+      "description": "Music from the motherland",
+      "url": "https://open.spotify.com/playlist/0yXHdm4q9Z5Rstkz1z8EIk",
+      "image": "https://i.pinimg.com/originals/ce/60/22/ce60228e791a812933b9051a23ae6505.jpg"
+    },
+    {
+      "id": "2",
+      "author": "James",
+      "genre": "Deep House",
+      "description": "Listen to chilled electric and deep house music",
+      "url": "https://open.spotify.com/playlist/0yXHdm4q9Z5Rstkz1z8EIk",
+      "image": "https://i.pinimg.com/564x/61/6c/af/616cafd3a9508fa3fd7f58932a906def.jpg"
+    },
+    {
+      "id": "3",
+      "author": "James",
+      "genre": "Alternative Hiphop",
+      "description": "Top alternative and underground hiphop to make your head bop",
+      "url": "https://open.spotify.com/playlist/4qLKbayykKQhiNIrL8kjRe",
+      "image": "https://i.pinimg.com/564x/99/10/8b/99108b9c49010a246df5bec2345a527f.jpg"
+    },
+    {
+      "id": "4",
+      "author": "Spotify",
+      "genre": "Classical",
+      "description": "A great selection for the sweetest ambient classical tunes like Mozzart",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DWWEJlAGA9gs0",
+      "image": "https://i.pinimg.com/564x/33/d0/b6/33d0b60ebc112af53e155a326c8806e7.jpg"
+    },
+    {
+      "id": "5",
+      "author": "James",
+      "genre": "Indie Rock",
+      "description": "Immerse yourself in a world of alternative rock and indie songs",
+      "url": "https://open.spotify.com/playlist/4qwKLJXffjtUrFV2xBrpVZ",
+      "image": "https://i.pinimg.com/564x/0b/7c/8b/0b7c8b9d5133d56971e2178c085e6d1a.jpg"
+    },
+    {
+      "author": "Spotify",
+      "genre": "RnB",
+      "description": "Smooth soul inspired tracks for relaxation",
+      "image": "https://i.pinimg.com/564x/5f/fe/72/5ffe7289e35d27eac4d2745fd31f18d6.jpg",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DWY3rhsGpsfCB",
+      "id": "KN8iRv_"
+    },
+    {
+      "author": "Spotify",
+      "genre": "RnB",
+      "description": "Smooth soul inspired tracks for relaxation",
+      "image": "https://i.pinimg.com/564x/5f/fe/72/5ffe7289e35d27eac4d2745fd31f18d6.jpg",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DWY3rhsGpsfCB",
+      "id": "UdM4rfx"
+    },
+    {
+      "author": "James",
+      "genre": "Amapiano",
+      "description": "Relax with chilled amapiano beats",
+      "image": "https://i.pinimg.com/564x/a3/ea/b5/a3eab5852a49c3f7cdee8650a345468f.jpg",
+      "url": "https://open.spotify.com/playlist/1f94Awoi0hDEafqQdgt8je",
+      "id": "EWcak_Y"
+    },
+    {
+      "author": "",
+      "genre": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "id": "-EfkEKS"
+    },
+    {
+      "author": "",
+      "genre": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "id": "xVxomN7"
+    },
+    {
+      "author": "",
+      "genre": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "id": "74B19hb"
+    },
+    {
+      "author": "",
+      "genre": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "id": "xIgSEqp"
+    },
+    {
+      "author": "Spotify",
+      "genre": "Hiphop",
+      "description": "Psych up with the latest and freshest hiphop",
+      "image": "https://i.pinimg.com/564x/9e/e1/d1/9ee1d1b3e36c9b3c0ae723af13819e40.jpg",
+      "url": "https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd",
+      "id": "iU3w2yW"
+    },
+    {
+      "author": "",
+      "genre": "",
+      "description": "",
+      "image": "",
+      "url": "",
+      "id": "an3TBq7"
+    }
+  ]
+}

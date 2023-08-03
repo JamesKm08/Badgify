@@ -1,5 +1,6 @@
 let playlist = document.getElementById('Badgify');
 let dataUrl = 'http://localhost:3000/playlists'
+let songForm = document.getElementById('songForm')
 
 // send GET request to the local server
 fetch(dataUrl)
@@ -52,5 +53,21 @@ let addPlaylist = (e) => {
   .then(res => res.json())
   .then(data => console.log(data))
 
-postForm.addEventListener('submit', addPlaylist)
+}
+songForm.addEventListener('submit', addPlaylist)
+
+let deletePlaylist = (e) => {
+  e.preventDefault()
+
+  fetch(`dataUrl${id}`,{
+    method: 'DELETE',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+  })
+  .then(res => res.json())
+  .then(data => console.log(data))
+
+document.querySelector('.del-btn').addEventListener('click', deletePlaylist)
+
 }
