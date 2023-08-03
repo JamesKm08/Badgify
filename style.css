@@ -1,39 +1,48 @@
 body {
     font-family: sans-serif;
-    background-image: url(https://i.pinimg.com/564x/e9/e4/3d/e9e43d20d8ccad3cfe001bc60b913f12.jpg);
+    background-image: url(https://i.pinimg.com/564x/5e/b2/c5/5eb2c57816b3eb8fa08e9f4335ab6b74.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     background-attachment: fixed;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
 #main{
-    background-color: #f0f0f0;
-    padding: 0px;
-    margin: 0;
+    background-color: #f5e3d7;
+    padding: 10px;
+    margin: 5;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    
   }
   h1 {
-    font-size: 24px;
+    font-size: 100px;
+    position: absolute;
+    flex: auto;
+    justify-content: center;
   }
   
   nav {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: right;
   }
   
   nav a {
     text-decoration: none;
     padding: 10px;
-    background-color: #ccc;
+    background-color: #00b6c4;
     color: #333;
   }
   
   nav a:hover {
-    background-color: #bbb;
+    background-color: #f5e3d7;
   }
   
   #Badgify-Container {
@@ -56,7 +65,7 @@ body {
     display: flex;
     justify-content: center;
     width: 70px;
-    background-color: #6319db;
+    background-color: #00b6c4;
     color: #fff;
     font-size: 16px;
     padding: 10px;

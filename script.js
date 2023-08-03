@@ -53,5 +53,5 @@ let addPlaylist = (e) => {
 
 }
 
-let form = document.querySelector('#postForm')
-form.addEventListener('submit', addPlaylist)
+postForm.addEventListener('submit', addPlaylist)
+
