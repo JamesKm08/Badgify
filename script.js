@@ -17,7 +17,7 @@ let displayScreen = (data) => {
       <h3>Genre: ${i.genre}</h3>
       <h3>${i.description}</h3>
       <a href="${i.url}"><button class = "play-btn">Play</button></a>
-      <button class = "del-btn">Delete</button><br><br>
+      <button type = "click" class = "del-btn">Delete</button><br><br>
       
     `
     playlist.appendChild(entry)
@@ -52,20 +52,5 @@ let addPlaylist = (e) => {
   .then(res => res.json())
   .then(data => console.log(data))
 
-
-
 postForm.addEventListener('submit', addPlaylist)
-
 }
-// let deletePlaylist = () => {
-//   fetch(dataUrl,{
-//     method: 'DELETE',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
-//   })
-//     .then(res => res.json())
-//     .then(data => console.log(data))
-
-//   delete.addEventListener('click', deletePlaylist)
-//   }
