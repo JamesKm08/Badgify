@@ -1,7 +1,9 @@
+document.addEventListener("DOMContentLoaded", (e) => {
 //Declaring the variables
+e.preventDefault();
 let playlist = document.getElementById('Badgify');
 let dataUrl = 'http://localhost:3000/playlists'
-let songForm = document.getElementById('songForm')
+let songs = document.getElementById('songForm')
 
 // send GET request to the local server
 fetch(dataUrl)
@@ -29,8 +31,7 @@ let displayScreen = (data) => {
 }
 
 //Using the POST request to add playlist and display them
-let addPlaylist = (e) => {
-  e.preventDefault()
+let addPlaylist = () => {
   let author = document.getElementById('author').value
   let genre = document.getElementById('genre').value
   let description = document.getElementById('description').value
@@ -56,14 +57,13 @@ let addPlaylist = (e) => {
   .then(data => console.log(data))
 
 }
-songForm.addEventListener('submit', addPlaylist)
+songs.addEventListener('submit', addPlaylist)
 
 
 //Deleting various playlistf from the list
-let deletePlaylist = (e) => {
-  e.preventDefault()
-
-  fetch(`dataUrl${id}`,{
+let deletePlaylist = () => {
+  
+  fetch(`${id}`,{
     method: 'DELETE',
     headers: {
         'Content-Type': 'application/json'
@@ -73,5 +73,7 @@ let deletePlaylist = (e) => {
   .then(data => console.log(data))
 
 document.querySelector('.del-btn').addEventListener('click', deletePlaylist)
-
 }
+}
+)
+
