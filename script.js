@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener('DOMContentLoaded', (e) => {
 //Declaring the variables
 e.preventDefault();
 let playlist = document.getElementById('Badgify');
-let dataUrl = 'http://localhost:3000/playlists'
+let dataUrl = 'https://project1-vercel-jsondb.vercel.app/playlists'
 let songs = document.getElementById('songForm')
 
 // send GET request to the local server
@@ -21,11 +21,11 @@ let displayScreen = (data) => {
       <h3>Genre: ${i.genre}</h3>
       <h3>${i.description}</h3>
       <a href="${i.url}"><button class = "play-btn">Play</button></a>
-      <button type = "click" class = "del-btn">Delete</button><br><br>
+      <button class = "del-btn">Delete</button><br><br>
       
     `
     playlist.appendChild(entry)
- 
+    document.querySelector('.del-btn').addEventListener('click', deletePlaylist())
   })
 
 }
@@ -57,13 +57,13 @@ let addPlaylist = () => {
   .then(data => console.log(data))
 
 }
-songs.addEventListener('submit', addPlaylist)
+if(songs){songs.addEventListener('submit', addPlaylist)}
 
 
-//Deleting various playlistf from the list
+//Deleting various playlist from the list
 let deletePlaylist = () => {
   
-  fetch(`${id}`,{
+  fetch(dataUrl,{
     method: 'DELETE',
     headers: {
         'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ let deletePlaylist = () => {
   .then(res => res.json())
   .then(data => console.log(data))
 
-document.querySelector('.del-btn').addEventListener('click', deletePlaylist)
+
 }
 }
 )
