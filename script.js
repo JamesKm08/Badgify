@@ -1,3 +1,4 @@
+//Declaring the variables
 let playlist = document.getElementById('Badgify');
 let dataUrl = 'http://localhost:3000/playlists'
 let songForm = document.getElementById('songForm')

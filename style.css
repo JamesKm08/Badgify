@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
   }
+
+header{
+  margin-bottom: 100px;
+}
   
 #main{
     background-color: #f5e3d7;
@@ -20,10 +24,19 @@ body {
     
   }
   h1 {
-    font-size: 100px;
+    font-size: 120px;
     position: absolute;
     flex: auto;
     justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  h2{
+    font-size: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  h3{
+    font-family: Garamond, serif;
+    font-size: 20px;
   }
   
   nav {
@@ -72,33 +85,39 @@ body {
     border: none;
     cursor: pointer;
  }
+ #playlist-form{
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+ }
 
- #playlist-form {
+#songForm {
   width: 400px;
-  margin: 0 auto;
+  margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-}
-
-#postForm {
-  margin-top: 20px;
+  border: none;
+  box-shadow: 0 0 5px 0 ;
+  background: inherit;
+  backdrop-filter: blur(10px);
 }
 
 label {
   font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
   margin-bottom: 10px;
 }
 
 input {
-  width: 100%;
+  width: 95%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
+  font-style: italic;
   margin-bottom: 10px;
 }
 
 button {
   width: 100px;
-  background-color: #000;
+  background-color: #7e7979;
   color: #fff;
   font-size: 16px;
   padding: 10px;
