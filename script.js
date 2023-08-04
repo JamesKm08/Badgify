@@ -27,6 +27,7 @@ let displayScreen = (data) => {
 
 }
 
+//Using the POST request to add playlist and display them
 let addPlaylist = (e) => {
   e.preventDefault()
   let author = document.getElementById('author').value
@@ -56,6 +57,8 @@ let addPlaylist = (e) => {
 }
 songForm.addEventListener('submit', addPlaylist)
 
+
+//Deleting various playlistf from the list
 let deletePlaylist = (e) => {
   e.preventDefault()
 
