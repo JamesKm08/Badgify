@@ -100,10 +100,7 @@ header{
   display: flex;
   justify-content: center;
   margin: 10%;
- }
-
-#songForm {
-  width: 400px;
+  width: 200px;
   margin: 20px;
   padding: 20px;
   border: none;
@@ -111,7 +108,7 @@ header{
   background: inherit;
   backdrop-filter: blur(10px);
 }
-
+ 
 label {
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
