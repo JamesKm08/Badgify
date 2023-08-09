@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', (e) => {
   //Declaring the variables
   e.preventDefault();
-  //Declaring the variables
-  e.preventDefault();
   let playlist = document.getElementById('Badgify');
   let dataUrl = 'http://localhost:3000/playlists'
   let songs = document.getElementById('songForm')
